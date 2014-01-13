@@ -73,7 +73,7 @@ class Dragon_SwitchClothes extends Sprite {
 		stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyEventHandler);
 		stage.addEventListener(KeyboardEvent.KEY_UP, onKeyEventHandler);
 		
-		_textField = new TextField(600, 26, "C-change clothes;A-move left;D-move right;W-jump", "Verdana", 16, 0, true);
+		_textField = new TextField(600, 26, "C-change clothes; A-move left; D-move right; W-jump", "Verdana", 16, 0, true);
 		_textField.color = 0xffffff;
 		_textField.x = 60;
 		_textField.y = 2;
@@ -93,7 +93,7 @@ class Dragon_SwitchClothes extends Sprite {
 					changeClothes();
 				}
 		}
-		var dir:Int;
+		var dir:Int = 0;
 		if(_isLeft && _isRight) {
 			dir = _moveDir;
 			return;
@@ -101,8 +101,6 @@ class Dragon_SwitchClothes extends Sprite {
 			dir = -1;
 		} else if(_isRight) {
 			dir = 1;
-		} else {
-			dir = 0;
 		}
 		if(dir == _moveDir) {
 			return;
