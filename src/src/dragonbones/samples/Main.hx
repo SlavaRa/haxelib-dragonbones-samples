@@ -57,5 +57,6 @@ private class StarlingMain extends starling.display.Sprite {
 		super();
 		//addChild(new Dragon_ChaseStarling());
 		//addChild(new Dragon_SwitchClothes());
+		addChild(new Example_AnimationCopy());
 	}
 }
