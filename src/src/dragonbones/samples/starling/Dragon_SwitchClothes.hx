@@ -1,6 +1,6 @@
 package dragonbones.samples.starling;
 import dragonbones.Armature;
-import dragonbones.factorys.ArmatureFactory;
+import dragonbones.TypeDefs.ArmatureFactory;
 import flash.net.URLLoader;
 import flash.net.URLLoaderDataFormat;
 import flash.net.URLRequest;

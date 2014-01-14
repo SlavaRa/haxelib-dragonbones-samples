@@ -1,13 +1,12 @@
 package dragonbones.samples.starling;
 import dragonbones.Armature;
-import dragonbones.factorys.ArmatureFactory;
+import dragonbones.TypeDefs.ArmatureFactory;
 import flash.net.URLLoader;
 import flash.net.URLLoaderDataFormat;
 import flash.net.URLRequest;
 import flash.utils.ByteArray;
 import starling.core.Starling;
 import starling.display.Sprite;
-import starling.events.EnterFrameEvent;
 import starling.events.Event;
 
 /**

@@ -2,6 +2,7 @@ package dragonbones.samples;
 import dragonbones.samples.starling.Dragon_ChaseStarling;
 import dragonbones.samples.starling.Dragon_SwitchClothes;
 import dragonbones.samples.starling.Example_AnimationCopy;
+import dragonbones.samples.starling.Example_Cyborg_AnimationMixing;
 import flash.display.Sprite;
 import flash.events.Event;
 import flash.Lib;
@@ -57,6 +58,7 @@ private class StarlingMain extends starling.display.Sprite {
 		super();
 		//addChild(new Dragon_ChaseStarling());
 		//addChild(new Dragon_SwitchClothes());
-		addChild(new Example_AnimationCopy());
+		//addChild(new Example_AnimationCopy());
+		addChild(new Example_Cyborg_AnimationMixing());
 	}
 }
