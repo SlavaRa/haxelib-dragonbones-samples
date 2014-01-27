@@ -4,8 +4,8 @@ import flash.events.Event;
 import flash.Lib;
 #if (flash11 && starling)
 import starling.core.Starling;
-import dragonbones.samples.starling.Dragon_ChaseStarling;
-import dragonbones.samples.starling.Dragon_SwitchClothes;
+import dragonbones.samples.starling.Example_Dragon_ChaseStarling;
+import dragonbones.samples.starling.Example_Dragon_SwitchClothes;
 import dragonbones.samples.starling.Example_AnimationCopy;
 import dragonbones.samples.starling.Example_Cyborg_AnimationMixing;
 import dragonbones.samples.starling.Example_Motorcycle_NestingSkeleton;
@@ -52,17 +52,19 @@ class Main extends Sprite {
 		}
 		_isInitialized = true;
 		#if (flash11 && starling)
-		new Starling(StarlingMain, stage).start();
+		new Starling(TestView, stage).start();
+		#else
+		//TODO:
 		#end
 	}
 }
 
 #if (flash11 && starling)
-private class StarlingMain extends starling.display.Sprite {
+private class TestView extends starling.display.Sprite {
 	public function new() {
 		super();
-		addChild(new Dragon_ChaseStarling());
-		//addChild(new Dragon_SwitchClothes());
+		addChild(new Example_Dragon_ChaseStarling());
+		//addChild(new Example_Dragon_SwitchClothes());
 		//addChild(new Example_AnimationCopy());
 		//addChild(new Example_Cyborg_AnimationMixing());
 		//addChild(new Example_Motorcycle_NestingSkeleton());

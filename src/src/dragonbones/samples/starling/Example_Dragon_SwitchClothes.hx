@@ -17,7 +17,7 @@ import starling.text.TextField;
 /**
  * @author SlavaRa
  */
-class Dragon_SwitchClothes extends Sprite {
+class Example_Dragon_SwitchClothes extends Sprite {
 	
 	public static inline var RESOURCES_DATA = "../../../../assets/DragonWithClothes.png";
 	

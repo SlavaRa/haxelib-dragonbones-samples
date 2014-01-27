@@ -19,7 +19,7 @@ import starling.textures.Texture;
 /**
  * @author SlavaRa
  */
-class Dragon_ChaseStarling extends Sprite {
+class Example_Dragon_ChaseStarling extends Sprite {
 	
 	static inline var DRAGON_WITH_CLOTHES_ASSET = "../../../../assets/DragonWithClothes.png";
 	static inline var STARLING_IMG = "../../../../assets/starling.png";

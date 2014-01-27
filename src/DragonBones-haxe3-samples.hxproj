@@ -18,16 +18,16 @@
   <classpaths>
     <class path="src" />
     <class path="..\assets" />
-    <class path="bin\flash\haxe" />
+    <class path="bin\windows\cpp\haxe" />
   </classpaths>
   <!-- Build options -->
   <build>
-    <option directives="tools=1.2.8&#xA;as3_native&#xA;display&#xA;web" />
+    <option directives="tools=1.2.8&#xA;lime_native&#xA;no-compilation&#xA;as3_native&#xA;display&#xA;windows&#xA;desktop&#xA;no-compilation" />
     <option flashStrict="False" />
     <option noInlineOnDebug="True" />
     <option mainClass="ApplicationMain" />
     <option enabledebug="True" />
-    <option additional="--no-output&#xA;-swf-lib starling.swf&#xA;--macro patchTypes('starling.patch')&#xA;-dce std&#xA;-swf-version 11&#xA;#--remap nme:flash" />
+    <option additional="--no-output&#xA;-dce std&#xA;--macro allowPackage(&quot;flash&quot;)&#xA;--macro keep(&quot;dragonbones.samples.Main&quot;)" />
   </build>
   <!-- haxelib libraries -->
   <haxelib>
