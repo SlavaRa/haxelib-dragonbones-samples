@@ -1,12 +1,15 @@
 package dragonbones.samples;
+import flash.display.Sprite;
+import flash.events.Event;
+import flash.Lib;
+#if (flash11 && starling)
+import starling.core.Starling;
 import dragonbones.samples.starling.Dragon_ChaseStarling;
 import dragonbones.samples.starling.Dragon_SwitchClothes;
 import dragonbones.samples.starling.Example_AnimationCopy;
 import dragonbones.samples.starling.Example_Cyborg_AnimationMixing;
-import flash.display.Sprite;
-import flash.events.Event;
-import flash.Lib;
-import starling.core.Starling;
+import dragonbones.samples.starling.Example_Motorcycle_NestingSkeleton;
+#end
 
 /**
  * @author SlavaRa
@@ -47,18 +50,22 @@ class Main extends Sprite {
 		if (_isInitialized) {
 			return;
 		}
-		
 		_isInitialized = true;
+		#if (flash11 && starling)
 		new Starling(StarlingMain, stage).start();
+		#end
 	}
 }
 
+#if (flash11 && starling)
 private class StarlingMain extends starling.display.Sprite {
 	public function new() {
 		super();
-		//addChild(new Dragon_ChaseStarling());
+		addChild(new Dragon_ChaseStarling());
 		//addChild(new Dragon_SwitchClothes());
 		//addChild(new Example_AnimationCopy());
-		addChild(new Example_Cyborg_AnimationMixing());
+		//addChild(new Example_Cyborg_AnimationMixing());
+		//addChild(new Example_Motorcycle_NestingSkeleton());
 	}
 }
+#end
